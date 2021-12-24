@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot("")
+bot = telebot.TeleBot("2121992248:AAFo1GhwiMV8K-B0mruxXIRqxq7exO54uXw")
 
 @bot.message_handler(commands=['start'])
 def start_command(message):
@@ -11,29 +11,34 @@ def start_command(message):
 def help_command(message):
     bot.send_message(message.chat.id,
                      "Список возможных команд:" + "\n" +
-                     "/overview - Презентационное видео о Российском Университете Транспорта (МИИТ)." + "\n" + #неупоминается
-                     "/info - Информация о ИУЦТ." + "\n" +
-                     "/vk - Официальное сообщество ИУЦТ РУТ (МИИТ) в ВКонтакте." + "\n" +
-                     "/youtube - Канал ИУЦТ на YouTube." + "\n" +
-                     "/instagram - Инстаграм ИУЦТ." + "\n" +
-                     "/telegram - Телеграм-канал ИУЦТ." + "\n" +
-                     "/departments - Информация о кафедрах ИУЦТ." + "\n" +
-                     "/institute_history - История ИУЦТ." + "\n" +
-                     "/news - Новости и события ИУЦТ."+ "\n" +
-                     "/first_persons - Первые лица института"+ "\n" +
-                     "/programs1 - Информация о программах обучения в университете." + "\n" + #неупоминается
-                     '/open_day - Видео: "День открытых дверей РУТ (МИИТ)". Содержит информацию об институтах, включая ИУЦТ.' + "\n" + #неупоминается
-                     "/entrance22 - Видео об организация приема в 2022 году." + "\n" + #+
-                     "/entrance_tests - Информация о вступительных испытаниях, проводимых университетом самостоятельно." + "\n" + #+
-                     "/olympiad - Информация для победителей и призёров олимпиад школьников." + "\n" + #+
-                     "/achievements - Информация об учете индивидуальных достижений поступающих при приеме." + "\n" #++ 
-                     "/special - Информация об особых правах при приеме в университет." + "\n" + #+
-                     "/min_points - Информацию о минимальных баллах, подтверждающих успешное прохождение вступительных испытаний." + "\n" + #-
-                     "/reg - Регистрация в личном кабинете абитуриента." + "\n" +
-                     "/cabinet - Личный кабинет абитуриента." + "\n" +
-                     "/student_life - Информация о студенческой жизни." + "\n" + #?
-                     "/contacts - Контактная информация." + "\n" + #?
-                     "/location - Информация о расположении приемной комиссии университета." + "\n" #+
+                     "/overview - Презентационное видео о Российском Университете Транспорта (МИИТ)." + "\n" + #неупоминается #естьвтрелло
+                     "/info - Информация о ИУЦТ." + "\n" + #естьвтрелло
+                     "/vk - Официальное сообщество ИУЦТ РУТ (МИИТ) в ВКонтакте." + "\n" + #естьвтрелло
+                     "/youtube - Канал ИУЦТ на YouTube." + "\n" + #естьвтрелло
+                     "/instagram - Инстаграм ИУЦТ." + "\n" + #естьвтрелло
+                     "/telegram - Телеграм-канал ИУЦТ." + "\n" + #естьвтрелло
+                     "/departments - Информация о кафедрах ИУЦТ." + "\n" + #естьвтрелло
+                     "/institute_history - История ИУЦТ." + "\n" +#естьвтрелло
+                     "/news - Новости и события ИУЦТ."+ "\n" + #естьвтрелло
+                     "/first_persons - Первые лица института."+ "\n" + #естьвтрелло
+                     "/advantages - Информация о преимуществах учебы в ИУЦТ."
+                     "/programs - Информация о программах обучения в институте." + "\n" + #неупоминается #естьвтрелло
+                     '/open_day - Видео: "День открытых дверей РУТ (МИИТ)". Содержит информацию об институтах, включая ИУЦТ.' + "\n" + #неупоминается #естьвтрелло
+                     "/entrance22 - Видео об организация приема в 2022 году." + "\n" + #+ #естьвтрелло
+                     "/entrance_tests - Информация о вступительных испытаниях, проводимых университетом самостоятельно." + "\n" + #+ #естьвтрелло
+                     "/olympiad - Информация для победителей и призёров олимпиад школьников." + "\n" + #+ #естьвтрелло
+                     "/achievements - Информация об учете индивидуальных достижений поступающих при приеме." + "\n" #++  #естьвтрелло
+                     "/special - Информация об особых правах при приеме в университет." + "\n" + #+ #естьвтрелло
+                     "/min_points - Информацию о минимальных баллах, подтверждающих успешное прохождение вступительных испытаний." + "\n" + #- #естьвтрелло
+                     "/reg - Регистрация в личном кабинете абитуриента." + "\n" +#естьвтрелло
+                     "/cabinet - Личный кабинет абитуриента." + "\n" +#естьвтрелло
+                     "/student_life - Информация о студенческой жизни." + "\n" + #?#естьвтрелло
+                     "/contacts - Контактная информация." + "\n" + #? #естьвтрелло
+                     "/location - Информация о расположении приемной комиссии университета." + "\n" #+ #естьвтрелло
+                     "/special_projects - Информация про специальные проекты."+ "\n" +#естьвтрелло
+                     "/partners - Информация о партнерах института." + "\n" +#естьвтрелло
+                     "/laboratories - Информация о транспортных лабораториях." #естьвтрелло
+                     "/video - Видео с объяснением процедуры зачисления в университет" #естьвтрелло
                      )
 
 @bot.message_handler(commands=['info'])
@@ -103,6 +108,7 @@ def tests_info_command(message):
                      "Информация о партнерах института - /partners" + "\n" +
                      "Информация о транспортных лабораториях - /laboratories" + "\n" +
                      "Последние новости и события института - /news" + "\n" +
+                     "Контактная информация - /contactst"
                      "" + "\n" +
                      "Ссылки на ИУЦТ:" + "\n" +
                      "ВКонтакте - /vk" + "\n" +
@@ -977,12 +983,9 @@ def laboratories_command(message):
 
 @bot.message_handler(commands=[''])
 def _command(message):
-    markup = types.InlineKeyboardMarkup()
-    _button = types.InlineKeyboardButton(text="", url="")
-    markup.add(_button)
     bot.send_message(message.chat.id,
-                     'Нажмите на кнопку, для того чтобы узнать информацию о профиле ""'
-                     , reply_markup=markup)
+                     ""
+                     )
 
 @bot.message_handler(commands=['tests_info'])
 def tests_info_command(message):
@@ -1054,13 +1057,6 @@ def video_command(message):
     markup.add(video_button)
     bot.send_message(message.chat.id, "Нажмите на кнопку, для того чтобы просмотреть видео с объяснением процедуры зачисления в университет.", reply_markup=markup)
 
-@bot.message_handler(commands=['programs1'])
-def programs_command(message):
-    markup = types.InlineKeyboardMarkup()
-    programs_button = types.InlineKeyboardButton(text="Программы обучения", url="https://rut-miit.ru/edu/programs")
-    markup.add(programs_button)
-    bot.send_message(message.chat.id, "Нажмите на кнопку, для того чтобы узнать информацию о программах обучения в университете.", reply_markup=markup)
-
 @bot.message_handler(commands=['special'])
 def special_command(message):
     markup = types.InlineKeyboardMarkup()
@@ -1078,7 +1074,7 @@ def min_points_command(message):
 @bot.message_handler(commands=['contacts'])
 def contacts_command(message):
     markup = types.InlineKeyboardMarkup()
-    contacts_button = types.InlineKeyboardButton(text="Контактная информация", url="https://rut-miit.ru/contacts")
+    contacts_button = types.InlineKeyboardButton(text="Контактная информация", url="https://imiit.ru/contacts")
     markup.add(contacts_button)
     bot.send_message(message.chat.id, "Нажмите на кнопку, для того чтобы узнать контактную информацию. Если вы хотите узнать расположение приемной комисии, можете использовать - /location.", reply_markup=markup)
 
